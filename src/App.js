@@ -1,10 +1,13 @@
 import React from 'react';
+import Navbar from './components/molecules/Navbar';
+import { CreateStyles } from './style/global';
 
 function App() {
   return (
-    <div className="App">
-      Mi portafolio 2.0
-    </div>
+    <>
+      <CreateStyles/>
+      <Navbar/>
+    </>
   );
 }
 
