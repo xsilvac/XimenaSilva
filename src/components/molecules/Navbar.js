@@ -15,6 +15,8 @@ const Navbar = () => {
         <Button text="Hola que tal" variant="danger" size="xs"/>
         <Button text="Hola como estas" variant="warning" size="s"/>
         <Button text="Nuevo archivo" disabled/> */}
+        <p>Ximena Silva </p>
+        <spam>Portafolio</spam>
         <Input icon={<FiAlertTriangle/>}/>
         <Input width="20%"/>
         <Input icon={<FiAlertTriangle/>} disabled/>
