@@ -66,7 +66,7 @@ border-right: 2px solid #FFFFFF;
 }
 `;
 
-const ContactContainer = style.div`
+const ContactContainer = style.footer`
 display: flex;
 flex-direction: column;
 padding-left: 30px;

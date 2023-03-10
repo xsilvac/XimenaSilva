@@ -19,6 +19,7 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   padding: 1.2rem;
   color: #ffffff;
+  font-size: 18px;
   &.active {
     font-weight: 900;
     border-bottom: 3px solid white;
