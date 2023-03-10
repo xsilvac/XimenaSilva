@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const ContainerButton = styled.button`
-  border: none;
-  padding: 0.8em;
+  padding: 0.5em 1em;
   cursor: pointer;
   border-radius: 1em;
-  font-size: 1rem;
-  background: ${({background}) =>background? background: "#fff"};
-  border: 1px solid #dcdfe6;
-  color: ${({color}) =>color? color: "#566074"};
+  font-weight: 700;
+  font-size: ${({ font }) => (font ? font : "1rem")};
+  background: ${({ background }) => (background ? background : "#fff")};
+  border: ${({ border }) => (border ? border : "1px solid #dcdfe6")};
+  color: ${({ color }) => (color ? color : "#566074")};
   user-select: none;
   &:active {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15),
@@ -20,7 +20,9 @@ const ContainerButton = styled.button`
   &:hover {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15),
       0 0 0 1px rgba(0, 0, 0, 0.1) inset;
-    background: #f5f4f4;
+    background: ${({ hover }) => (hover ? hover : "#f5f4f4")};
+    border: ${({ hover }) => (hover ? `3px solid ${hover}` : "1px solid #dcdfe6")};
+    color: #494646;
     transform: translate3d(0, 1px, 0);
   }
   &[disabled="disabled"],
@@ -32,7 +34,6 @@ const ContainerButton = styled.button`
     color: #fff;
     background-image: linear-gradient(45deg, #0674db, #069cf9);
     border: none;
-
   }
   &.btn-success {
     color: #fff;
@@ -41,12 +42,12 @@ const ContainerButton = styled.button`
   }
   &.btn-danger {
     color: white;
-    background-color: #E74C3C;
+    background-color: #e74c3c;
     border: none;
   }
   &.btn-warning {
     color: #383636;
-    background-color: #EEFC00;
+    background-color: #eefc00;
     border: none;
   }
   &.btn-small {
@@ -59,7 +60,18 @@ const ContainerButton = styled.button`
   }
 `;
 
-const Button = ({ text, variant, size, color, background, ...props }) => {
+const Button = ({
+  text,
+  variant,
+  size,
+  color,
+  background,
+  children,
+  border,
+  font,
+  hover,
+  ...props
+}) => {
   let variantClass = "";
   if (variant === "primary") {
     variantClass = "btn-primary";
@@ -82,8 +94,16 @@ const Button = ({ text, variant, size, color, background, ...props }) => {
   }
 
   return (
-    <ContainerButton color={color} background={background} {...props} className={variantClass}>
-      {text}
+    <ContainerButton
+      color={color}
+      background={background}
+      border={border}
+      font={font}
+      hover={hover}
+      {...props}
+      className={variantClass}
+    >
+      {text ? text : children}
     </ContainerButton>
   );
 };
