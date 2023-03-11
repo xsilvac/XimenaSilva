@@ -7,7 +7,7 @@ import { SiGmail } from "react-icons/si";
 const ContainerFooter = style.section`
     background: #2B3467;
     width: 100%;
-    height: 245px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;

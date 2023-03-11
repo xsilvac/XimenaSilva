@@ -22,7 +22,7 @@ const ContainerButton = styled.button`
       0 0 0 1px rgba(0, 0, 0, 0.1) inset;
     background: ${({ hover }) => (hover ? hover : "#f5f4f4")};
     border: ${({ hover }) => (hover ? `3px solid ${hover}` : "1px solid #dcdfe6")};
-    color: #494646;
+    color: ${({ hoverColor }) => (hoverColor ? hoverColor : "#494646")};
     transform: translate3d(0, 1px, 0);
   }
   &[disabled="disabled"],
@@ -70,6 +70,7 @@ const Button = ({
   border,
   font,
   hover,
+  hoverColor,
   ...props
 }) => {
   let variantClass = "";
@@ -100,6 +101,7 @@ const Button = ({
       border={border}
       font={font}
       hover={hover}
+      hoverColor={hoverColor}
       {...props}
       className={variantClass}
     >
