@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "../components/atoms/Card";
 import Presentation from "../components/molecules/Presentation";
@@ -7,8 +7,8 @@ import Button from "../components/atoms/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
-const ContainerHome = styled.section`
-padding: 4em 0;
+const ContainerSection = styled.section`
+  padding: 4em 0;
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -96,10 +96,59 @@ const CardStyle = styled.div`
   }
 `;
 
+const ProyectsStyle = styled.div`
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+  justify-content: center;
+  @media screen and (max-width: 1100px) {
+    gap: 0.5rem;
+  }
+  @media screen and (max-width: 400px) {
+    gap: 0.25rem;
+  }
+  > p {
+    font-size: 30px;
+    font-weight: bold;
+    @media screen and (max-width: 1300px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 1100px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 405px) {
+      font-size: 12px;
+    }
+  }
+  > img {
+    height: 150px;
+    @media screen and (max-width: 1100px) {
+      height: 80px;
+    }
+    @media screen and (max-width: 405px) {
+      height: 50px;
+    }
+  }
+  > span {
+    font-size: 15px;
+    @media screen and (max-width: 1300px) {
+      font-size: 13px;
+    }
+    @media screen and (max-width: 1100px) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: 405px) {
+      font-size: 8px;
+    }
+  }
+`;
+
 const ContainerButton = styled.div`
-    display: flex;
-    justify-content: center;  
-    > button {
+  display: flex;
+  justify-content: center;
+  > button {
     @media screen and (max-width: 950px) {
       padding: 0.5em 1em;
       font-size: 1rem;
@@ -118,39 +167,76 @@ const ContainerButton = styled.div`
 `;
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [skills, setSkills] = useState(data.skillsSummary);
+  const [project, setProject] = useState(data.projects);
+
+  useEffect(() => {
+    setSkills(skills.slice(0, 3));
+    setProject(project.slice(0, 3));
+  }, []);
+
   return (
     <>
       <Presentation />
-      <ContainerHome>
-      <TitleStyle>Mis Habilidades</TitleStyle>
-      <CardsContainer>
-        {data.skillsSummary.map((el) => (
-          <Card>
-            <CardStyle>
-              <div>
-                <p>{el.title}</p>
-                <img src={el.icon} />
-              </div>
+      <ContainerSection>
+        <TitleStyle>Mis Habilidades</TitleStyle>
+        <CardsContainer>
+          {skills.map((el) => (
+            <Card>
+              <CardStyle>
+                <div>
+                  <p>{el.title}</p>
+                  <img src={el.icon} />
+                </div>
 
-              <p>{el.summary}</p>
-            </CardStyle>
-          </Card>
-        ))}
-      </CardsContainer>
-      <ContainerButton>
-      <Button
-        background="#2B3467"
-        border="3px solid #2B3467"
-        color="#FFFFFF"
-        font="28px"
-        hover="#EB455F"
-        hoverColor="#ffffff"
-        onClick={() => navigate("/about-me")}
-      >
-        Ver más habilidades <AiOutlineArrowRight />
-      </Button></ContainerButton>
-    </ContainerHome>
+                <p>{el.summary}</p>
+              </CardStyle>
+            </Card>
+          ))}
+        </CardsContainer>
+        <ContainerButton>
+          <Button
+            background="#2B3467"
+            border="3px solid #2B3467"
+            color="#FFFFFF"
+            font="28px"
+            hover="#EB455F"
+            hoverColor="#ffffff"
+            onClick={() => navigate("/about-me")}
+          >
+            Ver más habilidades <AiOutlineArrowRight />
+          </Button>
+        </ContainerButton>
+      </ContainerSection>
+
+      <ContainerSection>
+        <TitleStyle>Mis Proyectos</TitleStyle>
+        <CardsContainer>
+          {project.map((el) => (
+            <Card>
+              <ProyectsStyle>
+                <p>{el.project}</p>
+                <img src={el.url} />
+                <span>{el.description}</span>
+              </ProyectsStyle>
+            </Card>
+          ))}
+        </CardsContainer>
+        <ContainerButton>
+          <Button
+            background="#2B3467"
+            border="3px solid #2B3467"
+            color="#FFFFFF"
+            font="28px"
+            hover="#EB455F"
+            hoverColor="#ffffff"
+            onClick={() => navigate("/proyects")}
+          >
+            Ver más proyectos <AiOutlineArrowRight />
+          </Button>
+        </ContainerButton>
+      </ContainerSection>
     </>
   );
 };

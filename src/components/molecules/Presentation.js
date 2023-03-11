@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../atoms/Button";
 import { HiDownload } from "react-icons/hi";
 import photo from "../../img/photo.png";
+import { useNavigate } from "react-router-dom";
 
 const ContainerPresentation = styled.article`
   background: #2b3467;
@@ -134,6 +135,9 @@ const ContainerButtoms = styled.section`
 `;
 
 const Presentation = () => {
+  
+  const navigate = useNavigate();
+
   return (
     <ContainerPresentation>
       <SectionPresentation>
@@ -156,6 +160,7 @@ const Presentation = () => {
             color="#FFFFFF"
             font="28px"
             hover="#BAD7E9"
+            onClick={() => navigate("/contact")}
           >
             Contactame
           </Button>
