@@ -1,0 +1,190 @@
+{
+  "name": "Ximena Silva",
+  "skillsSummary": [
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/2329/2329038.png",
+      "title": "Cooworking",
+      "summary": "Me considero una colaboradora valiosa, aporto mis conocimientos e ideas respetando las opiniones de los demás, para así optimizar el desarrollo del proyecto, creando un ambiente laboral armonioso."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/1903/1903520.png",
+      "title": "Programación",
+      "summary": "Tengo conocimientos bien fundamentados de JavaScript, HTML y CSS, lo que me permite adaptarme para poder trabajar con cualquier framework."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/65/65381.png",
+      "title": "Diseño responsive",
+      "summary": "Tengo experiencia creando páginas web con diseño responsive, gracias a ello puedo implementarlo de manera efectiva en cualquier proyecto."
+    }
+  ],
+  "skills": [
+    {
+      "skill": "React",
+      "percent": "70",
+      "category": "hardSkill",
+      "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+    },
+    {
+      "skill": "Bootstrap",
+      "percent": "60",
+      "category": "hardSkill",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+    },
+    {
+      "skill": "Javascript",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+      "skill": "HTML",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+    },
+    {
+      "skill": "CSS",
+      "percent": "70",
+      "category": "hardSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+    },
+    {
+      "skill": "Firebase",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+    },
+    {
+      "skill": "Node.js",
+      "percent": "70",
+      "category": "hardSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/919/919825.png"
+    },
+    {
+      "skill": "Git",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+    },
+    {
+      "skill": "Github",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    },
+    {
+      "skill": "Jest",
+      "percent": "80",
+      "category": "hardSkill",
+      "url": "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+    },
+    {
+      "skill": "Figma",
+      "percent": "60",
+      "category": "hardSkill",
+      "url": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+    },
+    {
+      "skill": "Ganas de Aprender",
+      "percent": "100",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/4334/4334822.png"
+    },
+    {
+      "skill": "Autoaprendizaje",
+      "percent": "90",
+      "category": "softSkill",
+      "url": "https://cdn-icons.flaticon.com/png/512/3321/premium/3321726.png?token=exp=1660966732~hmac=3fbb4ad7281ccaafc7efc15a639c6302"
+    },
+    {
+      "skill": "Trabajo en equipo",
+      "percent": "95",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/1534/1534938.png"
+    },
+    {
+      "skill": "Adaptabilidad",
+      "percent": "90",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/649/649650.png"
+    },
+    {
+      "skill": "Iniciativa",
+      "percent": "100",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/2464/2464153.png"
+    },
+    {
+      "skill": "Solución de problemas",
+      "percent": "90",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/3050/3050442.png"
+    },
+    {
+      "skill": "Ética Laboral",
+      "percent": "100",
+      "category": "softSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/2631/2631497.png"
+    },
+    {
+      "skill": "Proactividad",
+      "percent": "95",
+      "category": "softSkill",
+      "url": "https://cdn-icons.flaticon.com/png/512/1120/premium/1120311.png?token=exp=1660966554~hmac=0d72e002084558b89511898457c9a17b"
+    },
+    {
+      "skill": "Compromiso",
+      "percent": "100",
+      "category": "softSkill",
+      "url": "https://cdn-icons.flaticon.com/png/512/5165/premium/5165921.png?token=exp=1660967069~hmac=f46fc52ceb99c6170dafacb225cf52ad"
+    },
+    {
+      "skill": "Ingles",
+      "percent": "50",
+      "category": "softSkill",
+      "url": "https://cdn-icons.flaticon.com/png/512/4365/premium/4365271.png?token=exp=1660967119~hmac=0efe53d4cdcfa5b9c3ed4bb85b51c2bb"
+    }
+  ],
+  "projects": [
+    {
+      "project": "Burger Queen",
+      "title": "Burger Boss",
+      "url": "https://snipboard.io/D8Wt9Y.jpg",
+      "github": "https://github.com/xsilvac/LIM017-burger-queen",
+      "web": "https://lim-017-burger-queen-nine.vercel.app/",
+      "description": "🍔Burger Boss es una PWA para un restaurante creada con react y permite agregar productos a una orden, la interfaz debe actualizar la lista del pedido y el total.🛠️🛠️"
+    },
+    {
+      "project": "Md Links",
+      "title": "Md Links",
+      "url": "https://snipboard.io/6UtR2S.jpg",
+      "github": "https://github.com/xsilvac/LIM017-md-links",
+      "web": "https://www.npmjs.com/package/md-links-ximena",
+      "description": "Es una librería que permite leer los archivos Markdown(.md) en busca sus links, en esta librería se puede obtener la estadística del estado de los links como links totales, únicos y rotos 💻👩🏻‍💻⚙️."
+    },
+    {
+      "project": "Social Network",
+      "title": "Entre Patas",
+      "url": "https://snipboard.io/UaiBsg.jpg",
+      "github": "https://github.com/xsilvac/LIM017-social-network",
+      "web": "https://lim-017-social-network-lime.vercel.app/",
+      "description": "Red social para dueños de mascotas, donde puedan compartir recomendaciones, avisos por perdida o por si encuentran a mascotas extraviadas 📲💻."
+    },
+    {
+      "project": "Data Lovers",
+      "title": "Fan Ghibli",
+      "url": "https://snipboard.io/nxlv6O.jpg",
+      "github": "https://github.com/xsilvac/LIM017-data-lovers",
+      "web": "https://xsilvac.github.io/LIM017-data-lovers/",
+      "description": "Página web dirigida a todas las personas fanáticas de Studio Ghibli, que desean conocer información sobre sus películas, deseen filtrar según categorias y ver estadísticas💻."
+    },
+    {
+      "project": "Card Validation",
+      "title": "El club de los peludos",
+      "url": "https://snipboard.io/Xqb8Bw.jpg",
+      "github": "https://github.com/xsilvac/LIM017-card-validation",
+      "web": "https://xsilvac.github.io/LIM017-card-validation/",
+      "description": "👩🏻‍💻 Este proyecto fue creado con la intención de proteger la información financiara de las personas que tienen mascotas y que requieren adquirir comida, juguetes, entre otras cosas para sus mascotas y lo hacen de manera virtual."
+    }
+  ]
+}

@@ -29,10 +29,10 @@ const CardContainer = styled.div`
   }
 `;
 
-const Card = ({ width, height }) => {
+const Card = ({ width, height, children }) => {
   return (
     <CardContainer width={width} height={height}>
-      Card
+      {children}
     </CardContainer>
   );
 };
