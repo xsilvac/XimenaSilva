@@ -15,134 +15,126 @@
       "icon": "https://cdn-icons-png.flaticon.com/512/65/65381.png",
       "title": "Diseño responsive",
       "summary": "Tengo experiencia creando páginas web con diseño responsive, gracias a ello puedo implementarlo de manera efectiva en cualquier proyecto."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/4334/4334822.png",
+      "title": "Ganas de Aprender",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons.flaticon.com/png/512/3321/premium/3321726.png?token=exp=1660966732~hmac=3fbb4ad7281ccaafc7efc15a639c6302",
+      "title": "Autoaprendizaje",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/649/649650.png",
+      "title": "Adaptabilidad",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/2464/2464153.png",
+      "title": "Iniciativa",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/3050/3050442.png",
+      "title": "Solución de problemas",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/2631/2631497.png",
+      "title": "Ética Laboral",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons.flaticon.com/png/512/1120/premium/1120311.png?token=exp=1660966554~hmac=0d72e002084558b89511898457c9a17b",
+      "title": "Proactividad",
+      "summary": ""
+    },
+    {
+      "icon": "https://cdn-icons.flaticon.com/png/512/5165/premium/5165921.png?token=exp=1660967069~hmac=f46fc52ceb99c6170dafacb225cf52ad",
+      "title": "Compromiso",
+      "summary": ""
     }
   ],
-  "skills": [
+  "tecnology": [
     {
-      "skill": "React",
-      "percent": "70",
+      "name": "React",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
     },
     {
-      "skill": "Bootstrap",
-      "percent": "60",
-      "category": "hardSkill",
-      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-    },
-    {
-      "skill": "Javascript",
-      "percent": "80",
+      "name": "Javascript",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
     },
     {
-      "skill": "HTML",
-      "percent": "80",
+      "name": "HTML",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
     },
     {
-      "skill": "CSS",
-      "percent": "70",
+      "name": "CSS",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
     },
     {
-      "skill": "Firebase",
-      "percent": "80",
+      "name": "Style Components",
+      "score": "5",
+      "category": "hardSkill",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "score": "3",
+      "category": "hardSkill",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+    },
+    {
+      "name": "Firebase",
+      "score": "3",
       "category": "hardSkill",
       "url": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
     },
     {
-      "skill": "Node.js",
-      "percent": "70",
+      "name": "Node.js",
+      "score": "3",
       "category": "hardSkill",
       "url": "https://cdn-icons-png.flaticon.com/512/919/919825.png"
     },
     {
-      "skill": "Git",
-      "percent": "80",
+      "name": "Git",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
     },
     {
-      "skill": "Github",
-      "percent": "80",
+      "name": "Github",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
     },
     {
-      "skill": "Jest",
-      "percent": "80",
+      "name": "Gitlab",
+      "score": "3",
+      "category": "hardSkill",
+      "url": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    },
+    {
+      "name": "Jest",
+      "score": "3",
       "category": "hardSkill",
       "url": "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
     },
     {
-      "skill": "Figma",
-      "percent": "60",
+      "name": "Figma",
+      "score": "4",
       "category": "hardSkill",
       "url": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
-    },
-    {
-      "skill": "Ganas de Aprender",
-      "percent": "100",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/4334/4334822.png"
-    },
-    {
-      "skill": "Autoaprendizaje",
-      "percent": "90",
-      "category": "softSkill",
-      "url": "https://cdn-icons.flaticon.com/png/512/3321/premium/3321726.png?token=exp=1660966732~hmac=3fbb4ad7281ccaafc7efc15a639c6302"
-    },
-    {
-      "skill": "Trabajo en equipo",
-      "percent": "95",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/1534/1534938.png"
-    },
-    {
-      "skill": "Adaptabilidad",
-      "percent": "90",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/649/649650.png"
-    },
-    {
-      "skill": "Iniciativa",
-      "percent": "100",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/2464/2464153.png"
-    },
-    {
-      "skill": "Solución de problemas",
-      "percent": "90",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/3050/3050442.png"
-    },
-    {
-      "skill": "Ética Laboral",
-      "percent": "100",
-      "category": "softSkill",
-      "url": "https://cdn-icons-png.flaticon.com/512/2631/2631497.png"
-    },
-    {
-      "skill": "Proactividad",
-      "percent": "95",
-      "category": "softSkill",
-      "url": "https://cdn-icons.flaticon.com/png/512/1120/premium/1120311.png?token=exp=1660966554~hmac=0d72e002084558b89511898457c9a17b"
-    },
-    {
-      "skill": "Compromiso",
-      "percent": "100",
-      "category": "softSkill",
-      "url": "https://cdn-icons.flaticon.com/png/512/5165/premium/5165921.png?token=exp=1660967069~hmac=f46fc52ceb99c6170dafacb225cf52ad"
-    },
-    {
-      "skill": "Ingles",
-      "percent": "50",
-      "category": "softSkill",
-      "url": "https://cdn-icons.flaticon.com/png/512/4365/premium/4365271.png?token=exp=1660967119~hmac=0efe53d4cdcfa5b9c3ed4bb85b51c2bb"
     }
   ],
   "projects": [
