@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Card from "../components/atoms/Card";
+import {Card} from "../components/atoms/Card";
 import Presentation from "../components/molecules/Presentation";
 import data from "../data/data.json";
 import Button from "../components/atoms/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
-const ContainerSection = styled.section`
+export const ContainerSection = styled.section`
   padding: 4em 0;
   @media screen and (max-width: 600px) {
     display: flex;
@@ -17,7 +17,7 @@ const ContainerSection = styled.section`
   }
 `;
 
-const TitleStyle = styled.p`
+export const TitleStyle = styled.p`
   font-weight: 700;
   font-size: 40px;
   color: #eb455f;
@@ -28,7 +28,7 @@ const TitleStyle = styled.p`
   }
 `;
 
-const CardsContainer = styled.div`
+export const CardsContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ const CardsContainer = styled.div`
   color: black;
 `;
 
-const CardStyle = styled.div`
+export const CardStyle = styled.div`
   padding: 10%;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ const CardStyle = styled.div`
   }
 `;
 
-const ProyectsStyle = styled.div`
+export const ProyectsStyle = styled.div`
   padding: 10%;
   display: flex;
   flex-direction: column;

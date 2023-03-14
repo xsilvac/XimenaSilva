@@ -29,7 +29,27 @@ const CardContainer = styled.div`
   }
 `;
 
-const Card = ({ width, height, children }) => {
+const CardContainerSmall = styled.div`
+  background: #bad7e9;
+  border-radius: 24px;
+  box-shadow: 10px 10px 20px 0px #6d6b6b;
+  width: ${({ width }) => (width ? width : "200px")};
+  height: ${({ height }) => (height ? height : "228px")};
+  @media screen and (max-width: 400px) {
+    width: 150px;
+    height: 171px;
+  }
+`;
+
+export const CardSmall = ({ width, height, children }) => {
+  return (
+    <CardContainerSmall width={width} height={height}>
+      {children}
+    </CardContainerSmall>
+  );
+};
+
+export const Card = ({ width, height, children }) => {
   return (
     <CardContainer width={width} height={height}>
       {children}
@@ -37,4 +57,3 @@ const Card = ({ width, height, children }) => {
   );
 };
 
-export default Card;
