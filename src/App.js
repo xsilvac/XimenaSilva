@@ -7,12 +7,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Proyects from './pages/Proyects';
 import Contact from './pages/Contact';
+import {ToastContainer} from "react-toastify";
 
 
 function App() {
   return (
     <BrowserRouter>
       <CreateStyles/>
+      <ToastContainer/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
