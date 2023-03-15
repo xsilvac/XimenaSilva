@@ -9,6 +9,8 @@ import {
 } from "./Home";
 import data from "../data/data.json";
 import Ranking from "../components/atoms/Ranking";
+import { useNavigate } from "react-router-dom";
+import ButtonBack from "../components/atoms/ButtonBack";
 
 const ContainerCardSmall = styled.div`
   padding: 10%;
@@ -57,13 +59,16 @@ const ContainerCardSmall = styled.div`
 `;
 
 const About = () => {
+  const navigate = useNavigate();
+  const goBack = () => navigate(-1);
   return (
     <>
+    <ButtonBack onClick={goBack}/>
       <ContainerSection>
         <TitleStyle>Mis Habilidades</TitleStyle>
         <CardsContainer>
-          {data.skillsSummary.map((el) => (
-            <Card>
+          {data.skillsSummary.map((el, idx) => (
+            <Card key={idx}>
               <CardStyle>
                 <div>
                   <p>{el.title}</p>
@@ -78,8 +83,8 @@ const About = () => {
       <ContainerSection>
         <TitleStyle>Tecnologías que domino</TitleStyle>
         <CardsContainer>
-          {data.tecnology.map((el) => (
-            <CardSmall>
+          {data.tecnology.map((el, idx) => (
+            <CardSmall key={idx}>
               <ContainerCardSmall>
                 <p>{el.name}</p>
                 <img src={el.url} />

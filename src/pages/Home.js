@@ -8,7 +8,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
 export const ContainerSection = styled.section`
-  padding: 4em 0;
+  padding: 2em 0;
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -182,8 +182,8 @@ const Home = () => {
       <ContainerSection>
         <TitleStyle>Mis Habilidades</TitleStyle>
         <CardsContainer>
-          {skills.map((el) => (
-            <Card>
+          {skills.map((el,idx) => (
+            <Card key={idx}>
               <CardStyle>
                 <div>
                   <p>{el.title}</p>
@@ -213,8 +213,8 @@ const Home = () => {
       <ContainerSection>
         <TitleStyle>Mis Proyectos</TitleStyle>
         <CardsContainer>
-          {project.map((el) => (
-            <Card>
+          {project.map((el, idx) => (
+            <Card key={idx}>
               <ProyectsStyle>
                 <p>{el.project}</p>
                 <img src={el.url} />

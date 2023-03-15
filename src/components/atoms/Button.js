@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ContainerButton = styled.button`
   padding: 0.5em 1em;
   cursor: pointer;
-  border-radius: 1em;
+  border-radius: 10px;
   font-weight: 700;
   font-size: ${({ font }) => (font ? font : "1rem")};
   background: ${({ background }) => (background ? background : "#fff")};
@@ -58,6 +58,10 @@ const ContainerButton = styled.button`
     font-size: 12px;
     padding: 0.7em;
   }
+  &.btn-mediun {
+    font-size: 18px;
+    padding: 0.4em;
+  }
 `;
 
 const Button = ({
@@ -92,6 +96,8 @@ const Button = ({
     variantClass = variantClass + " btn-small";
   } else if (size === "xs") {
     variantClass = variantClass + " btn-xsmall";
+  }else if (size === "m") {
+    variantClass = variantClass + " btn-mediun";
   }
 
   return (
