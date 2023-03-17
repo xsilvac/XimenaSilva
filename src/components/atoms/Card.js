@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const CardContainer = styled.div`
   background: #bad7e9;
-  border-radius: 24px;
+  border-radius: 24px 0;
   box-shadow: 10px 10px 20px 0px #6d6b6b;
   width: ${({ width }) => (width ? width : "368px")};
   height: ${({ height }) => (height ? height : "400px")};
@@ -31,7 +31,7 @@ const CardContainer = styled.div`
 
 const CardContainerSmall = styled.div`
   background: #bad7e9;
-  border-radius: 24px;
+  border-radius: 24px 0;
   box-shadow: 10px 10px 20px 0px #6d6b6b;
   width: ${({ width }) => (width ? width : "200px")};
   height: ${({ height }) => (height ? height : "228px")};

@@ -4,12 +4,13 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 
 const PrimaryNav = styled.nav`
-  height: 106px;
+  height: 80px;
   display: flex;
   background: #2B3467;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  border-bottom: 5px solid #EB455F;
 `;
 
 const MenuLink = styled(Link)`
@@ -17,7 +18,7 @@ const MenuLink = styled(Link)`
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  padding: 1.2rem;
+  padding: 0.5rem 1.2rem;
   color: #ffffff;
   font-size: 18px;
   &.active {
