@@ -150,6 +150,7 @@ const Contact = () => {
             <label>Mensaje</label>
             <textarea
               placeholder="Mensaje"
+              rows="3"
               onChange={(e) => setMessage(e.target.value)}
             />
           </span>
